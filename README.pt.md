@@ -1,12 +1,12 @@
 **custom-boot-nte**
 
-Parâmetros de inicialização customizados, adequado para sistemas live, até mesmo a partir de sistemas já instalados. Imaginado para funcionar de forma semelhante ao casper, mas sem aplicar alterações na configuração do sistema base, como a adição de um superusuário sem senha ou alterações do polkit.
+Parâmetros de inicialização customizados, adequado para sistemas live, até mesmo a partir de sistemas já instalados. Imaginado para funcionar de forma semelhante ao *casper*, mas sem aplicar alterações na configuração do sistema base, como a adição de um superusuário sem senha ou alterações do polkit.
 
-Com esse projeto, qualquer sistema pode ser usado como um sistema live, até mesmo a partir de um sistema já instalado.
+Com esse projeto, qualquer sistema pode ser usado como um sistema live, até mesmo um sistema já instalado.
 
 Reconheço que testei apenas com o Ubuntu esse script de inicialização. Foi testado com Ubuntu 18.04, 20.04 e 22.04 (development branch) 😅️
 
-Para usá-lo na inicialização, o parâmetro *boot=custom-boot-nte* precisa ser adicionado, e o módulo do kernel overlay deve estar habilitado. Caso haja dúvidas se a configuração foi aplicada, adicione também *nte=1* à linha de comando do Linux. Se tudo der certo, a seguinte arte deve aparecer:
+Para usá-lo na inicialização, o parâmetro `boot=custom-boot-nte` precisa ser adicionado, e o módulo do kernel `overlay` deve estar habilitado. Caso haja dúvidas se a configuração foi aplicada, adicione também `nte=1` à linha de comando do Linux. Se tudo der certo, a seguinte arte deve aparecer:
 
 ```
 #######################################################################
@@ -30,7 +30,7 @@ Para usá-lo na inicialização, o parâmetro *boot=custom-boot-nte* precisa ser
 #######################################################################
 #######################################################################
 ```
-Como isso foi pensado para expandir em relação ao *casper*, o custom-boot-nte também suporta arquivos squashfs. A seguir estão dois exemplo válidos do parâmetro root da inicialização:
+Como isso foi pensado para expandir em relação ao *casper*, o custom-boot-nte também suporta arquivos *squashfs*. A seguir estão dois exemplo válidos do parâmetro root da inicialização:
 
 A partir de uma partição:
 ```
